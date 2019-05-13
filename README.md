@@ -7,6 +7,7 @@ repository for my UpWork projects, come check it out!
   Backend: Python server
   
   Installation:
+  
     clone the folder, go to chrome://extensions/ ; upload the extension folder to it;
     
     open upwork_mass_mailing\dist\server ; run server.exe
