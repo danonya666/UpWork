@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# IDEA settings
+/.idea
+
 # pickles and credentials
 credentials.json
 token.pickle
