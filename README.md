@@ -17,8 +17,6 @@ repository for my UpWork projects, come check it out!
        run server.exe
        
 2. Spreadsheet Mass mailing: google spreadsheets extension for mail merge/ mass mailing
-
-
   Installation/Usage:
       
       Open Spreadsheet
