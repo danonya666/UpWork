@@ -18,9 +18,8 @@ repository for my UpWork projects, come check it out!
        
 2. Spreadsheet Mass mailing: google spreadsheets extension for mail merge/ mass mailing
 
-Javascript
 
-      Installation/Usage:
+  Installation/Usage:
       
       Open Spreadsheet
       Go to Tools > Script editor...
