@@ -90,7 +90,16 @@ function main () {
       MailApp.sendEmail(email, subject, plainBody, {
         htmlBody: htmlBody
       })
-
+      
+      var currentdate = new Date(); 
+      var datetime = "Sent on " + currentdate.getDate() + "/"
+                + (currentdate.getMonth()+1)  + "/" 
+                + currentdate.getFullYear() + " @ "  
+                + currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+                + currentdate.getSeconds();
+      SpreadsheetApp.getActiveSpreadsheet().getActiveSheet().getRange(count + 2, 7).setValue(datetime);
+      
       emailMap[email] = true
 
       count++
@@ -147,10 +156,12 @@ var columns = getColumnHeadings(sheet)
   
   
   Utilities.sleep(1000 * timer)
-  
+
   for (var i in data) {
     var row = data[i]
+    var timer1 = row[0]
     var email = row[2]
+    Utilities.sleep(1000 * timer1)
 
     email = email.trim()
 
@@ -169,6 +180,15 @@ var columns = getColumnHeadings(sheet)
       MailApp.sendEmail(email, subject, plainBody, {
         htmlBody: htmlBody
       })
+      
+      var currentdate = new Date(); 
+      var datetime = "Sent on " + currentdate.getDate() + "/"
+                + (currentdate.getMonth()+1)  + "/" 
+                + currentdate.getFullYear() + " @ "  
+                + currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+                + currentdate.getSeconds();
+      SpreadsheetApp.getActiveSpreadsheet().getActiveSheet().getRange(count + 2, 7).setValue(datetime);
 
       emailMap[email] = true
 
